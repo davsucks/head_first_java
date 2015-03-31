@@ -19,6 +19,7 @@ public class GuessingGame extends ChapterFive.GuessingGame {
         System.out.println(output);
     }
 
+    @Override
     public void play() {
         while (true) {
             String guess = helper.getUserInput(PROMPT);
