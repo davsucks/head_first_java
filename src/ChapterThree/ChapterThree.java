@@ -13,7 +13,7 @@ public class ChapterThree {
         // create 5 new rectangles
         // set their width and height to random values
         // and add their area to the sum of areas
-        int areaSum = 0;
+        double areaSum = 0.0;
 
         for (int i = 0; i < 5; ++i) {
             myRects[i] = new Rectangle();
@@ -24,7 +24,8 @@ public class ChapterThree {
             areaSum += myRects[i].area();
         }
 
-        System.out.println("The average area of the rectangles is " + areaSum / 5);
+        String formattedOutput = String.format("The average area of the rectangle is %.2f", areaSum / 5);
+        System.out.println(formattedOutput);
 
 
     }
